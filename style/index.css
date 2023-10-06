@@ -135,5 +135,24 @@ section {
 .nosotros-banner {
     background-image: url("https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
     background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     height: 86vh;
+}
+
+.nosotros-banner h2 {
+    background-color: #122816a1;
+    font-size: 3rem;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+.nosotros-banner p {
+    background-color: #122816a1;
+    color: #e6e6e6;
+    text-align: center;
 }
