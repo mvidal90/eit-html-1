@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap');
 
 * {
     font-family: 'Orbitron', sans-serif;
     font-style: italic;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
+    margin-top: 4.5rem;
 }
 
 nav ul {
@@ -28,8 +34,10 @@ nav ul li a {
 }
 
 h1 {
+    font-family: 'Pixelify Sans', cursive;
     margin: 0;
     font-weight: 900;
+    font-size: 2rem;
 }
 
 h2 {
@@ -46,13 +54,18 @@ p, li {
 
 a {
     /*Con respecto a elemento padre*/
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     /*Con respecto a la configuracion del root*/
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+header a h1 {
+    color: black;
 }
 
 section {
-    padding: 0 5%;
+    padding: 1rem 5%;
 }
 
 #clientes p {
@@ -94,7 +107,10 @@ section {
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
+    position: fixed;
     padding: 8px;
+    top: 0;
+    width: 100%;
 }
 
 .text {
@@ -112,4 +128,12 @@ section {
     border: 4px solid #691e23;
     height: 250px;
     margin: 16px;
+}
+
+/* vh vw */
+
+.nosotros-banner {
+    background-image: url("https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    height: 86vh;
 }
