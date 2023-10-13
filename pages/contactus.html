@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/contactus.css">
+</head>
+<body>
+    <header class="header-container">
+        <a href="../index.html">
+            <h1>Contactanos</h1>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a 
+                        href="https://www.educacionit.com/"
+                        href="#"
+                        title="Ir a página externa de educación IT"
+                        target="_blank"
+                    >
+                        Ir a educación IT
+                    </a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="../index.html#clientes">Nuestros Clientes</a>
+                </li>
+                <li>
+                    <a href="./contactus.html">Contactanos</a>
+                </li>
+                <li>
+                    <a href="tel:1111222233">Teléfono</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form onsubmit="alert('Mensaje enviado correctamente!!')">
+            <label for="name">Nombre y apellido</label>
+            <input id="name" name="name" type="text" placeholder="Jose Perez" required>
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" placeholder="email@gmail.com" required>
+            <label for="subject">Asunto</label>
+            <input id="subject" name="subject" type="text" placeholder="Consulta sobre las imágenes">
+            <label for="msg">Mensaje</label>
+            <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+            <div class="field-conditions">
+                <input id="conditions" name="conditions" type="checkbox" required>
+                <label for="conditions">Acepto términos y condiciones</label>
+            </div>
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+    </main>
+</body>
+</html>

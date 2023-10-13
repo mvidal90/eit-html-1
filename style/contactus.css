@@ -1,0 +1,45 @@
+
+form {
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+form button {
+    background-color: rgb(87, 7, 162);
+    border: none;
+    border-radius: 1.5rem;
+    color: rgb(210, 194, 225);
+    padding: 0.5rem;
+    width: 15rem;
+}
+
+form button:hover {
+    color: rgb(87, 7, 162);
+    background-color: rgb(210, 194, 225);
+}
+
+input, textarea {
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    display: block;
+    font-family: sans-serif;
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+    width: 15rem;
+    /* Evitar que el textarea cambie de tamaño */
+    /* resize: none; */
+}
+
+input {
+    height: 1.5rem;
+}
+
+input[type="checkbox"] {
+    width: 1.5rem;
+}
+
+.field-conditions {
+    display: flex;
+    align-items: center;
+}
+
