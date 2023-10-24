@@ -41,6 +41,12 @@ a {
     text-decoration: none;
 }
 
+@media (max-width: 1400px) {
+    a {
+        font-size: 1rem;
+    }
+}
+
 section {
     padding: 1rem 5%;
 }
@@ -55,8 +61,8 @@ section {
     float: right;
 }
 
-.height-200 {
-    height: 200px;
+.width-200 {
+    width: 200px;
 }
 
 .ml-1 {

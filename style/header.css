@@ -2,6 +2,29 @@ nav ul {
     list-style-type: none;
     display: flex;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.sub-menu {
+    align-items: center;
+    background-color: rgb(250, 243, 231);
+    border-bottom: 1px solid rgb(69, 66, 66);
+    display: none;
+    padding: 8px;
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+    header nav ul {
+        display: none;
+    }
+    .sub-menu {
+        display: flex;
+    }
+    .sub-menu nav ul {
+        justify-content: start;
+    }
 }
 
 nav ul li {
@@ -32,6 +55,12 @@ a:hover {
     cursor: pointer;
 }
 
+@media (max-width: 1400px) {
+    a:hover {
+        font-size: 1.25rem;
+    }
+}
+
 a:visited  {
     color: rgb(114, 12, 114);
     text-decoration: none;
@@ -47,6 +76,7 @@ a:active {
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
+    min-height: 62px;
     position: fixed;
     padding: 8px;
     top: 0;
