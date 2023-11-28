@@ -71,9 +71,11 @@
         </nav>
     </div>
     <main class="form-container">
-        <form onsubmit="alert('Mensaje enviado correctamente!!')">
+        <form onsubmit="onSubmitContact()">
             <label for="name">Nombre y apellido</label>
-            <input id="name" name="name" type="text" placeholder="Jose Perez" required>
+            <input id="name" name="name" type="text" placeholder="Jose Perez" oninput="onChangeName()" required>
+            <!-- <p id="name-error" class="input-error" style="visibility: hidden;">Este campo solamente admite caracteres alfanumericos</p> -->
+            <p id="name-error" class="input-error"></p>
             <label for="email">Correo electrónico</label>
             <input id="email" name="email" type="email" placeholder="email@gmail.com" required>
             <label for="subject">Asunto</label>
@@ -81,13 +83,14 @@
             <label for="msg">Mensaje</label>
             <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
             <div class="field-conditions">
-                <input id="conditions" name="conditions" type="checkbox" required>
+                <input id="conditions" name="conditions" type="checkbox" oninput="onChangeTyC()" required>
                 <label for="conditions">Acepto términos y condiciones</label>
             </div>
-            <button type="submit">
+            <button id="submitBtn" type="submit" disabled>
                 Enviar
             </button>
         </form>
     </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>
