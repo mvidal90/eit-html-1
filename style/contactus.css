@@ -30,6 +30,11 @@ form button:hover {
     background-color: rgb(210, 194, 225);
 }
 
+form button:disabled {
+    color: #000;
+    background-color: #DDD;
+}
+
 input, textarea {
     box-sizing: border-box;
     border-radius: 1.5rem;
@@ -37,7 +42,7 @@ input, textarea {
     display: block;
     font-family: sans-serif;
     margin: 0.5rem 0;
-    padding: 0.25rem;
+    padding: 1.25rem 0.25rem;
     width: 100%
     /* Evitar que el textarea cambie de tamaño */
     /* resize: none; */
@@ -58,5 +63,15 @@ input[type="checkbox"] {
 .field-conditions {
     display: flex;
     align-items: center;
+}
+
+.input-error {
+    color: red;
+    border-color: red;
+}
+
+p.input-error {
+    font-size: 0.75rem;
+    margin-top: 0;
 }
 
