@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => console.log("El contenido ya se cargo completamente"))
 
 function onChangeName() {
     const input = document.getElementById("name");
@@ -32,11 +33,28 @@ function onChangeTyC () {
     }
 }
 
-function onSubmitContact() {
+function onSubmitContact(e) {
+    e.preventDefault();
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const subject = document.getElementById("subject").value;
     const msg = document.getElementById("msg").value;
 
-    alert(`Hola ${name}! Enviastes desde ${email} un mensaje con el asunto ${subject}, con el siguiente contenido: ${msg}`)
+    console.log(`Hola ${name}! Enviastes desde ${email} un mensaje con el asunto ${subject}, con el siguiente contenido: ${msg}`)
 }
+
+// stg.toUpperCase() -> Mayusculas
+// stg.toLowerCase() -> Minusculas
+
+
+// const cssFiles = ["css1.css", "css2.css", "css3.css"]
+// let activeFile = 0;
+// const links = document.getElementsByTagName("link")
+// function onClick() {
+//     activeFile++
+//     if (activeFile > 2) {
+//         activeFile = 0
+//     }
+//     // links[0].href = cssFiles[activeFile]
+//     console.log(cssFiles[activeFile])
+// }

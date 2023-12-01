@@ -71,7 +71,7 @@
         </nav>
     </div>
     <main class="form-container">
-        <form onsubmit="onSubmitContact()">
+        <form onsubmit="onSubmitContact(event)">
             <label for="name">Nombre y apellido</label>
             <input id="name" name="name" type="text" placeholder="Jose Perez" oninput="onChangeName()" required>
             <!-- <p id="name-error" class="input-error" style="visibility: hidden;">Este campo solamente admite caracteres alfanumericos</p> -->
@@ -89,6 +89,9 @@
             <button id="submitBtn" type="submit" disabled>
                 Enviar
             </button>
+            <!-- <button type="button" onclick="onClick()">
+                Enviar
+            </button> -->
         </form>
     </main>
     <script src="/js/main.js"></script>
